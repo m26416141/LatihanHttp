@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title> User </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">User</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item>
+    <ion-input
+      type="text"
+      placeholder="email"
+      [(ngModel)]="post.email"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      type="text"
+      placeholder="first name"
+      [(ngModel)]="post.first_name"
+    ></ion-input
+  ></ion-item>
+  <ion-item>
+    <ion-input
+      type="text"
+      placeholder="last name"
+      [(ngModel)]="post.last_name"
+    ></ion-input
+  ></ion-item>
+  <ion-button (click)="submit()">SIMPAN</ion-button>
 </ion-content>
