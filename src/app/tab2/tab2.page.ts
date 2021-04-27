@@ -30,7 +30,7 @@ export class Tab2Page {
       console.log(res);
       this.toastCtrl.create({
         duration : 3000,
-        message : "New item ID: "+ res.id
+        message : "New item name: "+ res.first_name + " ID: "+ res.id
       }).then(l => l.present())
     });
   }
